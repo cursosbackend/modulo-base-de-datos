@@ -1,12 +1,12 @@
 services:
   db:
-    image: postgres:latest
+    image: postgres:17
     container_name: postgres-db
     restart: always
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: fastapi_db
+      POSTGRES_DB: modulo5
     ports:
       - "5432:5432"
     volumes:
