@@ -1,7 +1,7 @@
 create table clientes (
     id serial primary key,
 	nombre varchar(20),
-	ciudad char(20)
+	ciudad char(20) 
 );
 
 create table pedidos (
@@ -9,7 +9,7 @@ create table pedidos (
 	cliente_id int,
 	monto int ,
 	fecha date,
-	foreign key (cliente_id) references clientes(id)	
+	foreign key (cliente_id) references clientes(id)
 );
 
 INSERT INTO clientes (nombre, ciudad) VALUES
